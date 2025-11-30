@@ -2,7 +2,7 @@
 ### Canonical VIREON Monorepo (Math, Laws, Engines, Doctrine)
 
 **Project:** VIREON / LaVissa — Iron Butterfly Edition  
-**Creator:** Michael Warren Song / Inkwon Song Jr. (a3fpro-lab)  
+**Creator:** Inkwon Song Jr. (a3fpro-lab)  
 **Role:** Master archive and living engine for all VIREON systems.
 
 ---
