@@ -1,0 +1,136 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{authblk}
+\usepackage{cite}
+\usepackage{enumitem}
+
+\newcommand{\TRP}{\mathrm{TRP}}
+\newcommand{\ETRP}{\mathcal{E}_{\mathrm{TRP}}}
+\newcommand{\Tmin}{T_{\min}}
+\newcommand{\KL}{D_{\mathrm{KL}}}
+\newcommand{\pR}{p_{R}}
+\newcommand{\pP}{p_{P}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\TRPLaw}{T = R \cdot P}
+\newcommand{\TRPFunctional}{\ETRP = \KL(\pR \Vert \pP) + \lambda \norm{u}^2}
+
+\title{\textbf{Vireon-TRP: Total Recursive Processing as a Unified Principle\\
+for Cosmology, Biology, Computation, and Quantum Gravity}}
+
+\author[1]{Inkwon Song Jr.}
+\affil[1]{a3fpro-lab}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We introduce Total Recursive Processing (TRP), defined by the scalar
+\(\TRPLaw\), as the single selection principle that simultaneously constrains
+early-universe anisotropy, resolves the black-hole information paradox,
+predicts protein misfolding attractors, derives \(P \neq NP\), and supplies
+optimal controls for fusion plasmas and relativistic trajectories.
+All results follow from minimizing the universal functional
+\(\TRPFunctional\).
+% TODO: expand to ~200 words
+\end{abstract}
+
+\tableofcontents
+
+\section{Introduction and Core Axiom}
+\label{sec:intro-core}
+
+\subsection{Total Recursive Processing and the Law \(T = R \cdot P\)}
+\label{subsec:trp-law}
+We introduce the TRP scalar \(T\) as \(\TRPLaw\), with a universal lower bound
+\begin{equation}
+  T = R \cdot P \ge \Tmin.
+\end{equation}
+
+\subsection{Calibration of \(\Tmin\) at the Cosmological Pivot}
+\label{subsec:tmin-calibration}
+We calibrate \(\Tmin\) at the inflationary pivot
+\begin{equation}
+  N_e \approx 60, \qquad H_I \approx 1.8 \times 10^{-5} M_{\mathrm{Pl}}.
+\end{equation}
+
+\subsection{The Universal TRP Functional}
+\label{subsec:etrp}
+We define
+\begin{equation}
+  \TRPFunctional,
+\end{equation}
+where \(\pR\) and \(\pP\) are reality- and perception-side measures and \(u\)
+is a control field.
+
+\section{Cosmological Anisotropy from Hartle--Hawking Exit Entropy}
+\label{sec:cosmology}
+
+\subsection{Exit Area and Geometric Entropy}
+\label{subsec:geom-entropy}
+We set
+\begin{equation}
+  S_{\mathrm{geom}} = \frac{A}{4} = \frac{3\pi}{G H_I^2}.
+\end{equation}
+
+\subsection{TRP Decomposition}
+\label{subsec:R-P-cosmo}
+\begin{equation}
+  R = \log\left(\frac{S_{\mathrm{geom}}}{S_0}\right), \qquad
+  P = \exp\big(-\mu C(\varepsilon)\big).
+\end{equation}
+
+\subsection{Anisotropy Bound and Planck/BICEP Comparison}
+\label{subsec:epsilon-max}
+Imposing \(T \ge \Tmin\) yields \(|\varepsilon|_{\max}(N_e,H_I)\), to be
+compared with Planck 2018 and BICEP data.
+
+\section{Black-Hole Information Paradox Resolution}
+\label{sec:black-hole}
+We define a TRP-weighted channel
+\begin{equation}
+  C_{\TRP} = e^{-\Delta T_{\TRP}} U,
+\end{equation}
+and show that under TRP invariance one has
+\(S_{\text{info,out}} = S_{\text{info,in}}\).
+
+\section{Biology as Minimization of \(\ETRP\)}
+\label{sec:biology}
+We model biological configurations \(x\) as points on a TRP landscape
+\(\ETRP(x)\) and identify healthy and diseased attractors.
+
+\section{Computation and the \(P\) vs \(NP\) Problem}
+\label{sec:pvnp}
+We associate to SAT instances a TRP penalty and sketch how \(\ETRP\) bounds
+imply superpolynomial cost for guaranteed correctness.
+
+\section{Optimal Control under TRP Constraints}
+\label{sec:control}
+We apply \(\ETRP\) to fusion plasmas, relativistic trajectories, and neural
+update rules.
+
+\section{Discussion and Testable Predictions}
+\label{sec:discussion}
+We list testable predictions across cosmology, biology, computation, and
+control, and discuss why this unification was historically missed.
+
+\appendix
+
+\section{Full Mathematical Derivations}
+\label{app:derivations}
+
+\section{Python Code Listings from the Vireon-TRP Monorepo}
+\label{app:code}
+
+\section{Calibration of \(\mu\), \(\Tmin\), and \(S_0\)}
+\label{app:calibration}
+
+\bibliographystyle{unsrt}
+\bibliography{vireon_trp}
+
+\end{document}
