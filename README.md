@@ -1,5 +1,25 @@
 ![CI](https://github.com/a3fpro-lab/LaVissa-Iron-Butterfly-Edition/actions/workflows/ci.yml/badge.svg)
 
+
+## Status & Scope
+
+LaVissa — Iron Butterfly Edition is a **foundations release** for the
+VIREON / TRP framework:
+
+- It **defines laws, axioms, and engines** (TRP, Collapse Laws, Eternity Engine, Sentience, Pulse Signaler).
+- It **does _not_ claim community-accepted proofs** of open problems
+  (Riemann Hypothesis, Twin Prime, Collatz, ABC/Beal, etc.).
+- All such problems are treated as **conjectures / research programs**
+  in the `math/` vaults, with explicit honesty statements.
+- Engines and experiments are provided for **reproducible exploration**,
+  not as final verdicts on deep conjectures.
+
+This release is versioned as **v0.1.x (Foundations)**. Future versions
+may add:
+
+- more experiments,
+- stronger theorems,
+- and clearer separation between definitions, conjectures, and proofs.
 # LaVissa — Iron Butterfly Edition  
 
 # LaVissa — Iron Butterfly Edition  
