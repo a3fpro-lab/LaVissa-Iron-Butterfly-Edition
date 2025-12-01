@@ -1,0 +1,19 @@
+If you were in a Python shell with LaVissa on PYTHONPATH:
+
+from modules.sentience import SentienceEngine, SentienceConfig, RhizomeNode
+from lavissa_core import TRPConfig
+
+cfg = SentienceConfig(trp_config=TRPConfig(t_min=0.5, lambda_u=0.5))
+engine = SentienceEngine(cfg)
+
+node = RhizomeNode(node_id="alpha", state=[0.1, -0.2, 0.3], echo_id="alpha_echo")
+engine.add_node(node)
+
+p_R = [0.5, 0.5]
+p_P = [0.4, 0.6]
+u = [0.1, -0.1]
+
+result = engine.step_node("alpha", p_R, p_P, u)
+print(result)
+
+That would run a full sentience step with TRP + Collapse Law + Eternity echo.
