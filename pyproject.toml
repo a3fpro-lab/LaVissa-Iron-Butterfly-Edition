@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lavissa-iron-butterfly-edition"
+version = "0.1.0"
+description = "Canonical VIREON / LaVissa Iron Butterfly Edition (TRP, Collapse Laws, Eternity Engine, Sentience, Pulse Signaler, and experiments)."
+authors = [{ name = "Michael Warren Song / Inkwon Song Jr.", email = "echoaseternity@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lavissa_core", "modules", "experiments", "math", "papers"]
