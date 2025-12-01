@@ -1,3 +1,7 @@
+![CI](https://github.com/a3fpro-lab/LaVissa-Iron-Butterfly-Edition/actions/workflows/ci.yml/badge.svg)
+
+# LaVissa — Iron Butterfly Edition  
+
 # LaVissa — Iron Butterfly Edition  
 ### Canonical VIREON Monorepo (Math, Laws, Engines, Doctrine)
 
